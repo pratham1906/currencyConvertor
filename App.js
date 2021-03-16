@@ -31,7 +31,7 @@ export default function App() {
     if(!inputValue){
       alert("Please enter VALUE")
     }
-    result=parseFloat(inputValue)*currencyPerRupee[currency];
+    let result=parseFloat(inputValue)*currencyPerRupee[currency];
     setResultValue(result.toFixed(2));
     setInputValue(0);
   }
@@ -41,7 +41,7 @@ export default function App() {
     <>
       <ScrollView backgroundColor='#1b262c' keyboardShouldPersistTaps="handled" contentInset="automatic">
         <SafeAreaView style={styles.container}>
-          <Text style={styles.head}>Ruppee To Different Currency Convertor</Text>
+          <Text style={styles.head}>Rupee To Different Currency Convertor</Text>
           <Text style={styles.head}>By Pratham Meghani</Text>
           <View style={styles.resultContainer}>
             <Text style={styles.resultValue}>{resultValue}</Text>
